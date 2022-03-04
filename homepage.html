@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<style type=text/css>
+	body {
+		margin: 0px;
+		min-width: 900px;
+	}
+	header {
+		padding-left: 15px;
+		overflow: hidden;
+		background-color: black;
+		font-family: source sans pro;
+	}
+	header a {
+	  float: left;
+	  font-size: 18px;
+	  color: white;
+	  text-align: center;
+	  padding: 15px 20px;
+	  text-decoration: none;
+	}
+	.dropdown {
+	  float: left;
+	  overflow: hidden;
+	}
+	.dropdown .dropbtn {
+	  font-size: 18px;  
+	  border: none;
+	  outline: none;
+	  color: white;
+	  padding: 15px 20px;
+	  background-color: inherit;
+	  font-family: inherit;
+	  margin: 0;
+	}
+	header a:hover, .dropdown:hover .dropbtn {
+	  background-color: #99aab5;
+	  color: black;
+	}
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+	.dropdown-content a {
+	  float: none;
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	  text-align: left;
+	}
+	.dropdown-content a:hover {
+	  background-color: #2c2f33;
+	  color: #f9f9f9;
+	}
+	.dropdown:hover .dropdown-content {
+	  display: block;
+	}
+	.name, .subtitle {
+		font-family: oswald
+	}
+	.highlight {
+		background-color: #ffd700;
+		color: #2c2f33;
+	}
+	.highlight::before, .highlight::after {
+		content: "\00a0";
+	}
+	.hero-image {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("banner.jpeg");
+		background-position: center;
+		background-size: cover;
+		height: 400px;
+		position: relative;
+	}
+	.hero-text {
+		color: white;
+		left: 50%;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.icons {
+		text-align: center;
+	}
+	.icon {
+		padding-top: 20px;
+		width: 20%;
+		filter: invert(70%) sepia(14%) saturate(286%) hue-rotate(160deg) brightness(92%) contrast(94%);
+	}
+	.profile {
+		border-radius: 50%;
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.container {
+		display: flex;
+		padding: 0px;
+		background-color: #2c2f33;
+	}
+	.left {
+		flex: 0 0 30%;
+		padding: 100px;
+	}
+	.right {
+		font-family: roboto slab;
+		padding: 60px;
+	}
+	.right a {
+		color: #99aab5;
+	}
+	.last {
+    	border-bottom: 5px solid #99aab5;
+	}
+	.cv {
+		text-align: center;
+	}
+	h1 {
+		font-family: roboto;
+	}
+	p {
+		color: #99aab5;
+		font-size: 18px;
+		word-spacing: 3px;
+	}
+	table thead tr {
+		background-color: #99aab5;
+		color: #2c2f33;
+	}
+	th, td {
+		padding: 10px 25px;
+		text-align: center;
+	}
+	table {
+		width: 80%;
+		font-family: roboto slab;
+		font-size: 18px;
+		color: #99aab5;
+		margin: 30px auto;
+		border-spacing: 5px;
+	}
+	th, .last {
+		border-radius:10px;
+		}
+	footer {
+		font-family: raleway;
+		padding: 25px;
+		text-align: center;
+		background-color: #99aab5;
+	}
+</style>
+
+<head>
+	<meta charset="utf-8">
+	<title>Tung-Le Pan Homepage</title>
+
+	<meta name="author" content="Tung-Le Pan">
+	<meta name="description" content="The homepage of PolyU student Tung-Le Pan (student number: 18079633d)">
+
+</head>
+
+<body>
+	<a name="top"></a>
+	<div>
+		<header>
+		  <a href="#About">About</a>
+		  <div class="dropdown">
+		    <button class="dropbtn">Posts</button>
+		    <div class="dropdown-content">
+		      <a href="#">Natural Language Processing</a>
+		      <a href="#">Chemistry, Geography, and Linguistics</a>
+		      <a href="#">Learning New Skills</a>
+		    </div>
+		  </div> 
+		  <a href="https://drive.google.com/file/d/1MvetkZXm3OirxcTqKR5WXibqeNLc1mCL/view">CV</a>
+		  <a href="/Contacts">Contact Me!</a>
+		</header>
+		<div class="hero-image">
+  			<div class="hero-text">
+    			<h1 class="name" style="font-size:50px">Tung-Le Pan</h1>
+    			<h4 class="subtitle">Undergraduate Student at Hong Kong Polytechnic University</h4>
+  			</div>
+		</div>
+		<div class="container">
+			<div class="left">
+				<img class="profile" src="profile.jpeg">
+				<div class="icons">
+					<a href="mailto:18079633d@connect.polyu.hk"><img class="icon" src="mail.svg"></a>
+					<a href="https://twitter.com/home"><img class="icon" src="twitter.svg"></a>
+					<a href="https://github.com/PanTungLe"><img class="icon" src="github.svg"></a>
+					<a href="https://www.facebook.com/"><img class="icon" src="facebook.svg"></a>
+				</div>
+			</div>
+			<div class="right">
+				<h1><a name="About"><span class="highlight">About Me</span></a></h1>
+				<p>Hi! My name is <b><span class="highlight">Pan Tung-Le</span></b>, or some people call me <b><span class="highlight">Tung-Le Pan</span></b> in certain parts of the world. The respective Chinese characters corrensponding to my name is <b><span class="highlight">潘同樂</span></b> (IPA: [pʰän⁵⁵ tʰʊŋ³⁵ lɤ⁵¹]) and I am a penultimate year student at the <a href="https://www.polyu.edu.hk/">Hong Kong Polytechnic University</a> studying <a href="https://www.polyu.edu.hk/cbs/web/en/">Chinese and Bilingual Studies</a> while doing a minor in <a href="https://www.comp.polyu.edu.hk/">Computing.</a></p>
+
+				<p>I hail from the subtropical island of Taiwan where I spent the first 18 years of my life, in the port city of <a href="https://www.google.com/maps/place/Keelung+City" title="Location on Google Maps">Keelung</a>. After graduating from high school, I decided to pursue my studied in <a href="https://www.google.com/maps/place/Hong+Kong" title="Location on Google Maps">Hong Kong</a> due to its cosmpolitan atmosphere and its fast-paced lifestyle which I consider to be suitable to my personality.</p>
+
+				<p>I enjoy travelling since it is an experience through which one can come across diversity face-to-face, and the sensory experiences and revelations one encounters these trips are incomparable to those that are acquired through books. The following are the places that I've travelled to:</p>
+
+				<table>
+					<thead>
+						<tr class="head">
+							<th>Country</th>
+							<th>Cities</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Japan</td>
+							<td>Osaka, Kyoto, Kobe, Kanazawa, Toyama, Fukuoka, Saga, Ureshino</td>
+						</tr>
+						<tr>
+							<td>South Korea</td>
+							<td>Seoul, Incheon, Gimpo, Yongin</td>
+						</tr>
+						<tr>
+							<td>China</td>
+							<td>Shenzhen</td>
+						</tr>
+						<tr>
+							<td>Vietnam</td>
+							<td>Hanoi, Ninh Binh, Mai Chau, Haiphong</td>
+						</tr>
+						<tr>
+							<td>United States of America</td>
+							<td>Minneapolis, Chicago, Milwaukee, Madison</td>
+						</tr>
+						<tr>
+							<td>Ireland</td>
+							<td>Dublin, Trim, Drogheda</td>
+						</tr>
+						<tr>
+							<td class="last">Czech Republic</td>
+							<td class="last">Prague, Kutna Hora</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="cv">Click here for my <a href="https://drive.google.com/file/d/1MvetkZXm3OirxcTqKR5WXibqeNLc1mCL/view">CV</a>!</p>
+			</div>
+		</div>
+		<footer>
+			@ Tung-Le Pan 2020-<br>
+			<br>
+			Powered by CSS, HTML, and <a href="#top">Me!</a>
+		</footer>
+	</div>
+</body>
+</html>			
